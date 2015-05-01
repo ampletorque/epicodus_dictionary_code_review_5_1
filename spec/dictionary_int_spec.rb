@@ -36,7 +36,6 @@ describe('word get', {:type => :feature}) do
   end
 end
 
-
 describe('word post', {:type => :feature}) do
   it('Adds definition to word') do
     visit('/')

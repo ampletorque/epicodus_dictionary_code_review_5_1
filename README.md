@@ -28,7 +28,7 @@ Running on Heroku:
 ------------------
 Type the following URI into your favorite browser:
 
-# https://immense-crag-5775.herokuapp.com
+https://guarded-gorge-7578.herokuapp.com/
 
 License:
 --------
