@@ -16,13 +16,13 @@ Setup:
 ------
 Runs under ruby v2.0.0p481 on OS X, requires the following ruby gems: sinatra, sinatra-contrib, rspec, capybara.  These can be installed as follows:
 
-$ gem install sinatra sinatra-contrib rspec capybara
+  $ gem install sinatra sinatra-contrib rspec capybara
 
-$ bundle
+  $ bundle
 
 Then run app as follows:
 
-$ ruby app.rb
+  $ ruby app.rb
 
 Running on Heroku:
 ------------------
