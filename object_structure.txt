@@ -1,0 +1,22 @@
+Dictionary.1
+  Entry.1
+     word
+     id
+     Definitions
+       definition.1
+         text
+         id
+         picture
+       definition.2
+         text
+         id
+     picture
+  Entry.2
+    word
+    id
+    Definitions
+      definition1
+      definition2
+Dictionary.2
+   Entry.1
+   Entry.2
