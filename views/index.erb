@@ -1,0 +1,26 @@
+<h1>Dictionary</h1>
+
+<% if @entries == [] %>
+  <p>You need to enter a word!</p>
+<% else %>
+
+  <% if @added == true %>
+    <p>You added the word \"<%= @word %></p>
+  <% end %>
+
+  <p>Here is your list of words:</p>
+  <ul>
+  <% @entries.each do |entry| %>
+    <li><a href="/word/<%= entry.id() %>"><%= entry.word() %></a></li>
+  <% end %>
+  </ul>
+<% end %>
+
+<p>Enter a word:</p>
+<form action="/" method="post">
+  <label for="word">Word:</label>
+  <input id="word" name="word" type="text">
+  <label for="definition">Definition:</label>
+  <input id="definition" name="definition" type="text">
+  <button type="submit">Add Word</button>
+</form>

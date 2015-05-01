@@ -1,0 +1,19 @@
+<h1>Definition for <%= @entry.word() %></h1>
+
+  <p>Here is your list of definitions:</p>
+  <ul>
+    <% @entry.definitions.each do |definition| %>
+    <li>
+     <%= definition.text() %>
+     </li>
+    <% end %>
+  </ul>
+
+<p>Optionally, enter another definition:</p>
+<form action="/word/<%= @entry.id() %>" method="post">
+  <label for="definition">Definition:</label>
+  <input id="definition" name="definition" type="text">
+  <button type="submit">Add Definition</button>
+</form>
+
+<a href="/">Return to main dictionary page.</a>
