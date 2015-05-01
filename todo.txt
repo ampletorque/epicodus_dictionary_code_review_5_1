@@ -1,0 +1,4 @@
+write & pass integration spec
+check off list of things from teachers
+put on heroku & add heroku url to readme
+submit
