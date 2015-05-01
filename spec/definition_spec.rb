@@ -20,10 +20,14 @@ describe(Definition) do
     end
   end
 
-  # describe('#picture') do
-  #   it("returns the picture for the definition") do
-  #     expect(test_definition.picture()).to(eq(pic))
-  #   end
-  # end
+  describe('#save') do
+    it("saves a definition to the array of definitions") do
+      test_definition = Definition.new("The Transmogrifier is an invention of Calvin's that would turn one thing into another. Like most of his inventions, it was made originally from a cardboard box, though a later model was made using a water gun. Calvin used the transmogrifiers many times, turning himself and Hobbes into quite a wide array of creatures.")
+      test_definition.save()
+      expect(Definition.all()).to(eq([test_definition]))
+      Definition.clear()
+      expect(Definition.all()).to(eq([]))
+    end
+  end
 
 end
